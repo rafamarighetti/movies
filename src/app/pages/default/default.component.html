@@ -1,0 +1,10 @@
+<app-header (term)="searchHeader($event)"></app-header>
+<div class="movie-list">
+  <div class="container">
+    <div *ngFor="let movie of movies | filter: term" class="movie-box">
+      <a [routerLink]="movie.id">
+        <img [src]="imgPath + movie.poster_path" [alt]="movie.title" [title]="movie.title">
+      </a>
+    </div>
+  </div>
+</div>

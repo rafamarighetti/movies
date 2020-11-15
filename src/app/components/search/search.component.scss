@@ -1,0 +1,14 @@
+.search{
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  outline: none;
+  box-shadow: none;
+  padding: 8px 24px;
+  color: #fff;
+  width: 350px;
+  @media(max-width: 767px) {
+    width: 100%;
+    margin-left: 24px;
+  }
+}

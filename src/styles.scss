@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/scss/variables";
+
+*{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  padding: 0 auto;
+  margin: 0 auto;
+  background:  $bg-color-dark;
+  .container{
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

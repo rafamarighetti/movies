@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="movie-info" [style]="'background-image: url(' + imgPath + movie.backdrop_path + ')'">
+  <div class="container">
+   <img [src]="imgPath + movie.poster_path" [alt]="movie.title" />
+   <div class="movie-info">
+      <h1>{{ movie.title }}</h1>
+      <div class="movie-geres">
+        <span *ngFor="let genre of movie.genres">
+          {{ genre.name }}
+        </span>
+      </div>
+      <div class="movie-average">
+        <strong>Nota Geral</strong><span>{{ movie.vote_average }}</span>
+        <strong>Total de Avaliações</strong><span>{{ movie.vote_count }}</span>
+      </div>
+      <p>{{ movie.overview }}</p>
+   </div>
+</div>
